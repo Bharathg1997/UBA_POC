@@ -24,4 +24,4 @@ jobs:
              cd /usr/local/bin/ 
              ./oc login --token=sha256~BPsuJLVUsxnpAgLbwYg10egcmDfqWoJklnPZuA847sY --server=https://c104-e.us-east.containers.cloud.ibm.com:31739
              ./oc project cp4i
-             ./oc create -f cp4i.yaml
+             ./oc create -f /root/cp4i.yaml
