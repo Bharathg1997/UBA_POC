@@ -1,7 +1,7 @@
 apiVersion: appconnect.ibm.com/v1beta1
 kind: IntegrationServer
 metadata:
-  name: integration-server
+  name: integration-server-poc
   namespace: cp4i
 spec:
   adminServerSecure: true
