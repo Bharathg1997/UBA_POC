@@ -29,4 +29,4 @@ spec:
     endpointType: http
   version: '11.0.0.14-r1-eus'
   barURL: >-
-    https://ace-dashboard-demo-dash:3443/v1/directories/Demo_App?e081375c-476d-4d4f-a52b-b19c12fc9f9c
+    http://localhost:8081/repository/integration/Rest_Api_Application_Put_Get.bar
