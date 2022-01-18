@@ -23,13 +23,7 @@ jobs:
            BAR_CREATION: /opt/ace-11.0.0.7/tools/mqsicreatebar
            BAR_STORE: /home/bandaru/Templates
         run: |
-            $BAR_CREATION -data /root -b $BAR_STORE/Rest_Api_Application_Put_Get.bar -a Rest_Api_Application_Put_Get
-      - name: Publishing_Artifacts
-        env:
-          NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
-          NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }} 
-          NEXUS_REPOSITORY_URL: ${{ secrets.NEXUS_REPOSITORY_URL }}
-        run:  curl -v -u$NEXUS_USERNAME:$NEXUS_PASSWORD --upload-file Rest_Api_Application_Put_Get.bar  $NEXUS_REPOSITORY_URL      
+            $BAR_CREATION -data /root -b $BAR_STORE/Rest_Api_Application_Put_Get.bar -a Rest_Api_Application_Put_Get   
              
       - name: oc login
         run: |
